@@ -22,7 +22,6 @@ namespace taxiifinal
             if (NumPassenger > 0)
             {
                 Console.WriteLine("Kerja : Iya ", OnDuty);
-                Console.WriteLine("Kerja : Iya ");
             }
             else
             {
