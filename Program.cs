@@ -12,15 +12,29 @@ namespace taxiifinal
         {
             taxigas taxi = new taxigas();
 
-            taxi.DriveName = "Ilham";
-            taxi.OnDuty = true;
-            taxi.NumPassenger = 84785478;
+            Console.Write("Masukan Nama Driver : ");  
+            taxi.DriveName = Console.ReadLine();
 
-            taxi.info();
-            taxi.up();
-            taxi.down();
+            Console.Write("Masukan Jumlah Penumpang : ");
+            taxi.NumPassenger =Convert.ToInt16(Console.ReadLine());
+
+            if (taxi.NumPassenger > 0)
+            {
+                taxi.info();
+                taxi.up();
+                taxi.down(); ;
+
+                Console.ReadLine();
+            }
+            else
+                taxi.info();
+            taxi.ngangur();
 
             Console.ReadLine();
+            
+               
+            
+           
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace taxiifinal
 {
@@ -16,19 +17,24 @@ namespace taxiifinal
         public void info()
         {
             Console.WriteLine("\n Taxi Info \n");
-            Console.WriteLine("Nama Driver : {0}", DriveName);
+            Console.WriteLine("Nama Driver : {0}",DriveName);
 
-            if (OnDuty == true)
+            if (NumPassenger > 0)
             {
+             
                 Console.WriteLine("Kerja : Iya ", OnDuty);
-
             }
             else
             {
+               
                 Console.WriteLine("Kerja : Tidak", OnDuty);
             }
-            Console.WriteLine("Nomor Pelanggan : {0}", NumPassenger);
+            Console.WriteLine("Jumlah Penumpang : {0}", NumPassenger);
 
+        }
+        public void ngangur()
+        {
+            Console.WriteLine("\n \n NGANGGUR AREK IKI \n \n", false);
         }
         public void up()
         {
