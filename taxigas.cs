@@ -33,7 +33,7 @@ namespace taxiifinal
         }
         public void ngangur()
         {
-            Console.WriteLine("\n \n NGANGGUR AREK IKI \n \n", false);
+            Console.WriteLine("\n \n Sedang Tidak Beroperasi \n \n", false);
         }
         public void up()
         {
